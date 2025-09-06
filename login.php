@@ -3,10 +3,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = isset($_POST['username']) ? trim($_POST['username']) : '';
     $password = isset($_POST['password']) ? trim($_POST['password']) : '';
 
-    $usuarioValido = "admin";
-    $passwordValido = "1234";
+    $userValid = "admin";
+    $passwordValid = "1234";
 
-    if ($username === $usuarioValido && $password === $passwordValido) {
+    if ($username === $userValid && $password === $passwordValid) {
         echo "ok";
     } else {
         echo "error";
